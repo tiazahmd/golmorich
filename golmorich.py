@@ -55,8 +55,14 @@ def fileType():
         elif fext[1] == '.c':
             type_of_file = "C"
             return type_of_file
+        elif fext[1] == '.h':
+            type_of_file = "Header"
+            return type_of_file
         elif fext[1] == '.txt':
             type_of_file = "Text"
+            return type_of_file
+        elif fext[1] == '.cpp':
+            type_of_file = "C++"
             return type_of_file
         else:
             type_of_file = "Unknown"
